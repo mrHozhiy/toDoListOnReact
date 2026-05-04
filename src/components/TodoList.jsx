@@ -13,7 +13,7 @@ const TodoList = (props) => {
       {tasks.map((task) => (
         <TodoItem
           className="todo__item"
-          kye={task.id}
+          key={task.id}
           id={task.id}
           title={task.title}
           isDone={task.isDone}
